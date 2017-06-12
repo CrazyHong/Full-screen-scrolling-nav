@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>jQuery整页全屏滚动导航按钮特效插件|horizontal-menu_jQuery之家-自由分享jQuery、html5、css3的插件库</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<link rel="stylesheet" type="text/css" href="css/scrollmenu.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/base.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/demo.css">
+
+	<!--[if IE]>
+		<script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
+	<![endif]-->
+</head>
+<body class="horizontal-menu-page">
+    <header id="header" class="cf">
+        <div id="logoText">
+            ScrollMenu.js
+        </div>
+    </header>
+    <div id="scrollWrapper">
+        <div id="sectionWrapper">
+            <section class="section" id="section1">
+                <header class="htmleaf-header">
+                    <h1>jQuery整页全屏滚动导航按钮特效插件 <span>A new interface to replace your old boring scrollbar</span></h1>
+                    <div class="htmleaf-links">
+                        <a class="htmleaf-icon icon-htmleaf-home-outline" href="http://www.htmleaf.com/" title="jQuery之家" target="_blank"><span> jQuery之家</span></a>
+                        <a class="htmleaf-icon icon-htmleaf-arrow-forward-outline" href="http://www.htmleaf.com/jQuery/Menu-Navigation/201505211876.html" title="返回下载页" target="_blank"><span> 返回下载页</span></a>
+                    </div>
+                    <div class="htmleaf-demo center">
+                      <a href="index.html">default</a>
+                      <a href="creative_menu.html">creative_menu</a>
+                      <a href="horizontal_menu.html" class="current">horizontal_menu</a>
+                      <a href="horizontal_scrollbar.html">horizontal_scrollbar</a>
+                      <a href="horizontal_top.html">horizontal_top</a>
+                      <a href="scrollbar_visible.html">scrollbar_visible</a>
+                      <a href="vertical_scrollbar.html">vertical_scrollbar</a>
+                    </div>
+                </header>
+            </section>
+            <section class="section" id="section2">
+                <div class="content">Page2</div>
+            </section>
+            <section class="section" id="section3">
+                <div class="content">Page3</div>
+            </section>
+            <section class="section" id="section4">
+                 <div class="content">Page4</div>   
+            </section>
+            <section class="section" id="section5">
+                  <div class="related">
+                        <h3>如果你喜欢这个插件，那么你可能也喜欢:</h3>
+                        <a href="http://www.htmleaf.com/jQuery/Layout-Interface/201503021446.html">
+                          <img src="related/1.jpg" width="300" alt=" jQuery和CSS3带过渡效果的全屏垂直翻页特效插件"/>
+                          <h3> jQuery和CSS3带过渡效果的全屏垂直翻页特效插件</h3>
+                        </a>
+                        <a href="http://www.htmleaf.com/html5/html5muban/20141126596.html">
+                          <img src="related/2.jpg" width="300" alt="html5和css3响应式全屏滚动页面切换效果"/>
+                          <h3>html5和css3响应式全屏滚动页面切换效果</h3>
+                        </a>
+                    </div>
+            </section>
+        </div>
+
+    </div>
+	
+	
+	<script src="assets/js/jquery.js"></script>
+    <script src="js/scrollmenu.js"></script>
+    <script>
+            //base setup
+        var setupOption = {
+            template: '<div class="menu-wrap"><div class="menu"><%= label %></div></div>',
+            menuType : 'horizontal-menu',
+            appendTo : '#header',
+            anchorSetup: [
+                {
+                    backgroundColor: "#dc767d",
+                    label: "Section 1"
+                    },
+                {
+                    backgroundColor: "#36d278",
+                    label: "Section 2"
+                    },
+                {
+                    backgroundColor: "#22cfc6",
+                    label: "Section 3"
+                    },
+                {
+                    backgroundColor: "#8794a1",
+                    label: "Section 4"
+                    },
+                {
+                    backgroundColor: "#1ccdaa",
+                    label: "Section 5"
+                }]
+        };
+
+        var scrollMenu = ScrollMenu('#scrollWrapper', setupOption);
+    </script>
+</body>
+</html>
